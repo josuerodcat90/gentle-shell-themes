@@ -5,7 +5,7 @@
     "editor": "#262335",
     "panel": "#2a2139",
     "selection": "#463564",
-    "border": "#495495",
+    "border": "#b893ce",
     "white": "#ffffff",
     "pink": "#ff7edb",
     "cyan": "#03edf9",
@@ -19,7 +19,7 @@
     "gray": "#b6b1b1"
   },
   "colors": {
-    "accent": "pink",
+    "accent": "aqua",
     "border": "border",
     "borderAccent": "pink",
     "borderMuted": "comment",
@@ -48,7 +48,7 @@
     "mdCodeBlock": "white",
     "mdCodeBlockBorder": "comment",
     "mdQuote": "green",
-    "mdQuoteBorder": "green",
+    "mdQuoteBorder": "aqua",
     "mdHr": "border",
     "mdListBullet": "pink",
     "toolDiffAdded": "green",
@@ -66,8 +66,8 @@
     "thinkingOff": "comment",
     "thinkingMinimal": "border",
     "thinkingLow": "cyan",
-    "thinkingMedium": "green",
-    "thinkingHigh": "yellow",
+    "thinkingMedium": "pink",
+    "thinkingHigh": "aqua",
     "thinkingXhigh": "pink",
     "bashMode": "coral"
   }
