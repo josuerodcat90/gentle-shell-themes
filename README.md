@@ -1,45 +1,99 @@
 # Gentle Shell Themes
 
-Two planned community themes for Gentle Shell, inspired by SynthWave '84 and SynthWave '84 Blues for Visual Studio Code. The goal is to bring their distinctive palettes to the Pi terminal interface while keeping text readable for extended use.
+An unofficial collection of Pi themes for Gentle Shell, inspired by SynthWave '84 and SynthWave '84 Blues for Visual Studio Code. The repository is the source of truth for theme files.
 
 ## Project status
 
-This project is in the planning stage. The themes have not yet been implemented, installed, or validated. Installation instructions and compatibility claims will be added after testing.
+- **SynthWave '84:** the first repository theme is [`themes/synthwave-84.json`](themes/synthwave-84.json). It has been checked against the installed Pi 1.5.0 schema, but its visual testing in Gentle Shell is still in progress.
+- **SynthWave '84 Blues:** planned separately, based on the actual Blues palette by sabrsorensen, not an assumed color shift of the original.
 
-## Planned themes
+The theme has been previewed on Windows; persistence and other platforms have not yet been verified. A Pi theme cannot reproduce the original editor glow on its own or necessarily control the entire terminal background.
 
-- **SynthWave '84:** dark violet backgrounds with neon pink, cyan, green, and retro accents, adapted from the original theme by Robb Owen.
-- **SynthWave '84 Blues:** a separate adaptation based on the actual Blues palette by sabrsorensen, not an assumed color shift of the original.
+## Install and use a theme
 
-Both themes are intended to use native Pi theme JSON files with distinct names. Their colors will be mapped to interface roles, including messages, Markdown, syntax, tool output, and diffs. Visual adjustments made for contrast or usability will be documented.
+You need Git and an existing Gentle Shell installation. The instructions below install the available `synthwave-84` theme. The Blues theme is not available yet.
 
-## Scope and limitations
+**Availability:** the theme has not yet been published to the default branch. A fresh clone will contain the theme only after the relevant changes have been published to the branch you check out.
 
-- Preserve the identity of each source theme while prioritizing legibility.
-- Keep the themes independent of Gentle Shell and Pi source code.
-- Do not implement the original editor's glow effect in the initial version. A standard Pi theme cannot reproduce it on its own.
-- Do not assume that a Pi theme controls the background of the entire terminal window. Terminal color settings may need separate, optional configuration.
-- Treat the project repository as the source of truth and local theme files as replaceable installed copies.
+### 1. Clone the repository
 
-## Planned development
+In PowerShell on Windows, or a terminal on Linux or macOS, run:
 
-1. Inspect the installed Gentle Shell and Pi versions, the active agent home, and the matching theme schema.
-2. Compare both original theme files and record their source versions and color mappings.
-3. Build and validate the original theme first, then the Blues variant.
-4. Test selection, persistence, contrast, messages, Markdown, tools, and diffs in Gentle Shell.
-5. Document installation, recovery, compatibility, attribution, and any visual adjustments.
-6. Investigate Pi package distribution after the themes have been validated.
+```sh
+git clone https://github.com/josuerodcat90/gentle-shell-themes.git
+cd gentle-shell-themes
+```
 
-Before changing an existing user configuration or replacing a local theme file, inspect and back up the affected files. Do not assume that a default Pi agent path applies to every Gentle Shell installation. A complete Gentle Shell uninstall may remove an isolated agent home, so installed files must not be the only copies.
+If you already have a clone, open its directory instead. Check that `themes/synthwave-84.json` exists before continuing.
+
+### 2. Find your agent home
+
+Run this in the same environment you use to launch Gentle Shell:
+
+```sh
+gentle-shell home
+```
+
+The output includes a mode and a path, for example `isolated <agent-dir>`. Copy only the path, not the mode. The usual isolated home is `~/.gentle-shell/agent`, but linked or custom homes can differ. Use the reported path rather than assuming a location.
+
+### 3. Copy the theme
+
+Run the commands for your operating system from the cloned repository. Both options create the `themes` directory if needed and stop instead of replacing an existing theme with the same name. They do not edit `settings.json`.
+
+#### Windows: PowerShell
+
+```powershell
+$agentHome = Read-Host 'Paste the agent home path from gentle-shell home'
+$themesDir = Join-Path $agentHome 'themes'
+$source = 'themes/synthwave-84.json'
+$destination = Join-Path $themesDir 'synthwave-84.json'
+if (!(Test-Path -LiteralPath $source -PathType Leaf)) { throw 'Theme file not found in this checkout.' }
+if (!(Test-Path -LiteralPath $agentHome -PathType Container)) { throw 'Agent home directory not found.' }
+New-Item -ItemType Directory -Force -Path $themesDir | Out-Null
+if (Test-Path -LiteralPath $destination) { throw 'Theme already exists. Back it up before replacing it.' }
+Copy-Item -LiteralPath $source -Destination $destination
+```
+
+#### Linux and macOS: shell
+
+```sh
+printf 'Paste the agent home path from gentle-shell home: '
+IFS= read -r agent_home
+if [ ! -f themes/synthwave-84.json ]; then
+  echo 'Theme file not found in this checkout.'
+elif [ ! -d "$agent_home" ]; then
+  echo 'Agent home directory not found.'
+elif [ -e "$agent_home/themes/synthwave-84.json" ]; then
+  echo 'Theme already exists. Back it up before replacing it.'
+else
+  mkdir -p "$agent_home/themes" && cp -n themes/synthwave-84.json "$agent_home/themes/synthwave-84.json"
+fi
+```
+
+If a theme with that name already exists, inspect and back it up before replacing it. The copy in this repository remains the source of truth.
+
+### 4. Select the theme
+
+Open Gentle Shell and choose `synthwave-84` through `/gentle:customize` or Pi's `/settings` theme selector. If a newly added theme is not listed, run `/reload` or restart Gentle Shell. To return to your previous theme, select it through the same interface.
+
+### Update or recover
+
+To update, obtain the desired repository version, back up any installed file with the same name, and copy the new JSON to the reported agent home's `themes` directory. After a reinstall or home change, run `gentle-shell home` again before copying. A complete Gentle Shell uninstall may remove an isolated agent home, so keep your repository copy separately. Avoid installing the same theme through multiple sources at once, as duplicate names can conflict.
+
+## Next steps
+
+1. Continue testing persistence, contrast, messages, Markdown, tools and diffs in Gentle Shell.
+2. Verify installation on Linux and macOS and document compatibility.
+3. Build and validate the separate Blues theme, then investigate Pi package distribution.
 
 ## Credits and attribution
 
-These planned themes are unofficial adaptations of:
+These themes are unofficial adaptations of:
 
-- [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), created by Robb Owen.
-- [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84.
+- [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), created by Robb Owen. Its [MIT notice](LICENSES/synthwave-84-MIT.txt) is preserved here.
+- [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. This variant is planned and its notice will be preserved when its source material is incorporated.
 
-Both source repositories provide MIT license notices. The relevant notices will be preserved when source material is incorporated. This project is not affiliated with or endorsed by the original authors or the Gentle Shell project.
+This project is not affiliated with or endorsed by the original authors or the Gentle Shell project.
 
 ## License
 
