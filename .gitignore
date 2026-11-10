@@ -1,0 +1,4 @@
+# Add project-specific ignore rules as needed.
+.atl/
+docs/
+odd/
