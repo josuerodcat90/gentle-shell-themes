@@ -5,15 +5,15 @@ An unofficial collection of Pi themes for Gentle Shell, inspired by SynthWave '8
 ## Project status
 
 - **SynthWave '84:** the first repository theme is [`themes/synthwave-84.json`](themes/synthwave-84.json). It has been checked against the installed Pi 1.5.0 schema, but its visual testing in Gentle Shell is still in progress.
-- **SynthWave '84 Blues:** planned separately, based on the actual Blues palette by sabrsorensen, not an assumed color shift of the original.
+- **SynthWave '84 Blues:** a separate theme based on sabrsorensen's Blues palette is available at [`themes/synthwave-84-blues.json`](themes/synthwave-84-blues.json). Its palette follows the Blues source with deliberate adaptations for Pi. It has been previewed in Gentle Shell on Windows.
 
-The theme has been previewed on Windows; persistence and other platforms have not yet been verified. A Pi theme cannot reproduce the original editor glow on its own or necessarily control the entire terminal background.
+Both themes have been previewed on Windows; persistence and other platforms have not yet been verified. A Pi theme cannot reproduce the original editor glow on its own or necessarily control the entire terminal background.
 
 ## Install and use a theme
 
-You need Git and an existing Gentle Shell installation. The instructions below install the available `synthwave-84` theme. The Blues theme is not available yet.
+You need Git and an existing Gentle Shell installation. The instructions below install `synthwave-84`. To install Blues instead, replace `synthwave-84` with `synthwave-84-blues` in the file paths and selection name; the two themes can coexist.
 
-**Availability:** the theme has not yet been published to the default branch. A fresh clone will contain the theme only after the relevant changes have been published to the branch you check out.
+**Availability:** Blues is available only in a checkout containing its theme file. Check the branch and file before installing.
 
 ### 1. Clone the repository
 
@@ -84,14 +84,14 @@ To update, obtain the desired repository version, back up any installed file wit
 
 1. Continue testing persistence, contrast, messages, Markdown, tools and diffs in Gentle Shell.
 2. Verify installation on Linux and macOS and document compatibility.
-3. Build and validate the separate Blues theme, then investigate Pi package distribution.
+3. Review the Blues variant visually, then investigate Pi package distribution.
 
 ## Credits and attribution
 
 These themes are unofficial adaptations of:
 
 - [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), created by Robb Owen. Its [MIT notice](LICENSES/synthwave-84-MIT.txt) is preserved here.
-- [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. This variant is planned and its notice will be preserved when its source material is incorporated.
+- [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. Its [MIT notice](LICENSES/synthwave-84-blues-MIT.txt) is preserved here.
 
 This project is not affiliated with or endorsed by the original authors or the Gentle Shell project.
 
