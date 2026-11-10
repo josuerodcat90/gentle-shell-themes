@@ -1,10 +1,9 @@
 # Gentle Shell Themes
 
-An unofficial collection of Pi themes for Gentle Shell, inspired by SynthWave '84 and SynthWave '84 Blues for Visual Studio Code. The repository is the source of truth for theme files.
+An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell), inspired by various themes for Visual Studio Code.
 
 ## Contents
 
-- [Project status](#project-status)
 - [Preview](#preview)
 - [Install and use a theme](#install-and-use-a-theme)
     - [Clone the repository](#1-clone-the-repository)
@@ -15,13 +14,6 @@ An unofficial collection of Pi themes for Gentle Shell, inspired by SynthWave '8
 - [Terminal appearance](#terminal-appearance)
 - [Credits and attribution](#credits-and-attribution)
 - [License](#license)
-
-## Project status
-
-- **SynthWave '84:** [`themes/synthwave-84.json`](themes/synthwave-84.json) has been checked against the installed Pi 1.5.0 schema. On Windows, the user-message background and pending, successful, and failed tool backgrounds were visually approved against a `#262335` terminal background. The custom-message background still needs visual verification.
-- **SynthWave '84 Blues:** a separate theme based on sabrsorensen's Blues palette is available at [`themes/synthwave-84-blues.json`](themes/synthwave-84-blues.json). Its palette follows the Blues source with deliberate adaptations for Pi. It has been previewed in Gentle Shell on Windows.
-
-Both themes have been previewed on Windows; persistence and other platforms have not yet been verified. A Pi theme cannot reproduce the original editor glow on its own or necessarily control the entire terminal background.
 
 ## Preview
 
@@ -78,7 +70,7 @@ To update, obtain the desired repository version, back up any installed file wit
 
 ## Terminal appearance
 
-A Pi theme does not necessarily set the entire terminal background. To reproduce the contrast shown in the previews, configure your terminal profile with these background colors:
+To reproduce the contrast shown in the previews, configure your terminal profile with these background colors:
 
 | Theme               | Terminal background |
 | ------------------- | ------------------- |
