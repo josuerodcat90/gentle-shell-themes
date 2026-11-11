@@ -23,16 +23,16 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
     <td width="50%"><a href="images/synthwave-84-blues.png"><img src="images/synthwave-84-blues.png" alt="SynthWave '84 Blues theme in Gentle Shell"></a></td>
   </tr>
   <tr>
-    <td align="center">SynthWave '84</td>
-    <td align="center">SynthWave '84 Blues</td>
+    <td align="center">SynthWave '84 - unofficial Gentle Shell adaptation</td>
+    <td align="center">SynthWave '84 Blues - unofficial Gentle Shell adaptation</td>
   </tr>
   <tr>
     <td width="50%"><a href="images/dracula.png"><img src="images/dracula.png" alt="Dracula theme in Gentle Shell"></a></td>
     <td width="50%"><a href="images/monokai.png"><img src="images/monokai.png" alt="Monokai theme in Gentle Shell"></a></td>
   </tr>
   <tr>
-    <td align="center">Dracula</td>
-    <td align="center">Monokai</td>
+    <td align="center">Dracula - unofficial Gentle Shell adaptation</td>
+    <td align="center">Monokai - unofficial Gentle Shell adaptation</td>
   </tr>
 </table>
 
