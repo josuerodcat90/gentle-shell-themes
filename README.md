@@ -17,17 +17,24 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 
 ## Preview
 
-### SynthWave '84 - unofficial Gentle Shell adaptation
-
-![SynthWave '84 theme in Gentle Shell](images/synthwave-84.png)
-
-### SynthWave '84 Blues - unofficial Gentle Shell adaptation
-
-![SynthWave '84 Blues theme in Gentle Shell](images/synthwave-84-blues.png)
-
-### Dracula - unofficial Gentle Shell adaptation
-
-![Dracula theme in Gentle Shell](images/dracula.png)
+<table>
+  <tr>
+    <td width="50%"><a href="images/synthwave-84.png"><img src="images/synthwave-84.png" alt="SynthWave '84 theme in Gentle Shell"></a></td>
+    <td width="50%"><a href="images/synthwave-84-blues.png"><img src="images/synthwave-84-blues.png" alt="SynthWave '84 Blues theme in Gentle Shell"></a></td>
+  </tr>
+  <tr>
+    <td align="center">SynthWave '84</td>
+    <td align="center">SynthWave '84 Blues</td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="images/dracula.png"><img src="images/dracula.png" alt="Dracula theme in Gentle Shell"></a></td>
+    <td width="50%"><a href="images/monokai.png"><img src="images/monokai.png" alt="Monokai theme in Gentle Shell"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Dracula</td>
+    <td align="center">Monokai</td>
+  </tr>
+</table>
 
 ## Install and use a theme
 
@@ -77,6 +84,7 @@ To reproduce the contrast shown in the previews, configure your terminal profile
 | SynthWave '84       | `#262335`           |
 | SynthWave '84 Blues | `#002335`           |
 | Dracula             | `#282A36`           |
+| Monokai             | `#272822`           |
 
 For the SynthWave previews, the terminal foreground is `#E5E5E5` (rather than pure white). The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice. Your terminal's foreground can affect text that uses its default color.
 
@@ -106,6 +114,7 @@ These themes are unofficial adaptations of:
 - [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), created by Robb Owen. Its [MIT notice](LICENSES/synthwave-84-MIT.txt) is preserved here.
 - [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. Its [MIT notice](LICENSES/synthwave-84-blues-MIT.txt) is preserved here.
 - Dracula, created by Zeno Rocha and maintained by the Dracula community: an unofficial adaptation of the [open-source VS Code theme source](https://github.com/dracula/visual-studio-code/blob/b50e62e320906d5f57a8bf05fd6ddf23b890d6dd/src/dracula.yml) at commit `b50e62e320906d5f57a8bf05fd6ddf23b890d6dd`. Its [MIT notice](LICENSES/dracula-MIT.txt) is preserved here. Message and tool-state backgrounds are adapted for Pi rather than copied from the source.
+- Monokai, originally created by Wimer Hazenberg: an unofficial adaptation of the [VS Code theme source](https://github.com/microsoft/vscode/blob/f93fdeb454a0f0fafe5f310408cec48dd3b6f58a/extensions/theme-monokai/themes/monokai-color-theme.json) at commit `f93fdeb454a0f0fafe5f310408cec48dd3b6f58a`. The [VS Code MIT notice](LICENSES/monokai-vscode-MIT.txt) is preserved here. Message and tool-state backgrounds are adapted for Pi.
 
 This project is not affiliated with or endorsed by the original authors or the [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) project.
 
