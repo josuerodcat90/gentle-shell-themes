@@ -77,16 +77,16 @@ To update, obtain the desired repository version, back up any installed file wit
 
 ## Terminal appearance
 
-To reproduce the contrast shown in the previews, configure your terminal profile with these background colors:
+For a complementary terminal appearance, these background and foreground colors are recommended but optional:
 
-| Theme               | Terminal background |
-| ------------------- | ------------------- |
-| SynthWave '84       | `#262335`           |
-| SynthWave '84 Blues | `#002335`           |
-| Dracula             | `#282A36`           |
-| Monokai             | `#272822`           |
+| Theme               | Terminal background | Terminal foreground |
+| ------------------- | ------------------- | ------------------- |
+| SynthWave '84       | `#262335`           | `#E5E5E5`           |
+| SynthWave '84 Blues | `#002335`           | `#E5E5E5`           |
+| Dracula             | `#282A36`           | `#F8F8F2`           |
+| Monokai             | `#272822`           | `#F8F8F2`           |
 
-For the SynthWave previews, the terminal foreground is `#E5E5E5` (rather than pure white). The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice. Your terminal's foreground can affect text that uses its default color.
+The SynthWave foreground is used in the previews; the Dracula and Monokai recommendations match their theme foregrounds. Your terminal's foreground can affect text that uses its default color. The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice.
 
 **In Windows Terminal**, set the background and foreground colors in the selected profile's color scheme. Optionally, configure the profile's `font` object to enable font ligatures. The following example uses Victor Mono; other fonts with ligature support, such as Fira Code, can also be used by changing `face`:
 
