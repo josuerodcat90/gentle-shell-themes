@@ -25,9 +25,13 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 
 ![SynthWave '84 Blues theme in Gentle Shell](images/synthwave-84-blues.png)
 
+### Dracula - unofficial Gentle Shell adaptation
+
+![Dracula theme in Gentle Shell](images/dracula.png)
+
 ## Install and use a theme
 
-You need Git and an existing Gentle Shell installation. You can install `synthwave-84`, `synthwave-84-blues`, or both; the themes can coexist.
+You need Git and an existing Gentle Shell installation. Browse the previews above and the JSON files in `themes/` to choose the themes you want; they can coexist.
 
 ### 1. Clone the repository
 
@@ -52,13 +56,13 @@ The output includes a mode and a path, for example `isolated <agent-dir>`. Copy 
 
 Open the path reported by `gentle-shell home` in your file manager. Open the `themes` folder inside it, or create it if it does not exist. You may need to show hidden folders in your file manager.
 
-From the cloned repository's `themes` folder, copy either or both theme files into the agent home's `themes` folder, depending on which themes you want to use.
+From the cloned repository's `themes` folder, copy the theme files you want to use into the agent home's `themes` folder.
 
 If a file with the same name already exists in the destination, inspect and back it up before replacing it. This does not edit `settings.json`; the repository copy remains the source of truth.
 
 ### 4. Select the theme
 
-Open Gentle Shell and choose `synthwave-84` or `synthwave-84-blues` through `/gentle:customize` or Pi's `/settings` theme selector. If a newly added theme is not listed, run `/reload` or restart Gentle Shell. To return to your previous theme, select it through the same interface.
+Open Gentle Shell and choose an installed theme through `/gentle:customize` or Pi's `/settings` theme selector. If a newly added theme is not listed, run `/reload` or restart Gentle Shell. To return to your previous theme, select it through the same interface.
 
 ### Update or recover
 
@@ -72,8 +76,9 @@ To reproduce the contrast shown in the previews, configure your terminal profile
 | ------------------- | ------------------- |
 | SynthWave '84       | `#262335`           |
 | SynthWave '84 Blues | `#002335`           |
+| Dracula             | `#282A36`           |
 
-The previews also use `#E5E5E5` as the terminal foreground (rather than pure white) and the [Victor Mono](https://rubjo.github.io/victor-mono/) font. These settings are optional; your terminal's foreground can affect text that uses its default color.
+For the SynthWave previews, the terminal foreground is `#E5E5E5` (rather than pure white). The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice. Your terminal's foreground can affect text that uses its default color.
 
 **In Windows Terminal**, set the background and foreground colors in the selected profile's color scheme. Optionally, configure the profile's `font` object to enable font ligatures. The following example uses Victor Mono; other fonts with ligature support, such as Fira Code, can also be used by changing `face`:
 
@@ -100,8 +105,9 @@ These themes are unofficial adaptations of:
 
 - [SynthWave '84](https://github.com/robb0wen/synthwave-vscode), created by Robb Owen. Its [MIT notice](LICENSES/synthwave-84-MIT.txt) is preserved here.
 - [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. Its [MIT notice](LICENSES/synthwave-84-blues-MIT.txt) is preserved here.
+- Dracula, created by Zeno Rocha and maintained by the Dracula community: an unofficial adaptation of the [open-source VS Code theme source](https://github.com/dracula/visual-studio-code/blob/b50e62e320906d5f57a8bf05fd6ddf23b890d6dd/src/dracula.yml) at commit `b50e62e320906d5f57a8bf05fd6ddf23b890d6dd`. Its [MIT notice](LICENSES/dracula-MIT.txt) is preserved here. Message and tool-state backgrounds are adapted for Pi rather than copied from the source.
 
-This project is not affiliated with or endorsed by the original authors or the Gentle Shell project.
+This project is not affiliated with or endorsed by the original authors or the [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) project.
 
 ## License
 
