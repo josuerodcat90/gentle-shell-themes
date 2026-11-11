@@ -1,6 +1,6 @@
 # Gentle Shell Themes
 
-An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell), inspired by various themes for Visual Studio Code.
+An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell), inspired by various themes from Visual Studio Code.
 
 ## Contents
 
@@ -29,8 +29,6 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 
 You need Git and an existing Gentle Shell installation. You can install `synthwave-84`, `synthwave-84-blues`, or both; the themes can coexist.
 
-**Availability:** Blues is available only in a checkout containing its theme file. Check the branch and file before installing.
-
 ### 1. Clone the repository
 
 In PowerShell on Windows, or a terminal on Linux or macOS, run:
@@ -39,8 +37,6 @@ In PowerShell on Windows, or a terminal on Linux or macOS, run:
 git clone https://github.com/josuerodcat90/gentle-shell-themes.git
 cd gentle-shell-themes
 ```
-
-If you already have a clone, open its directory instead. Check that the theme files you want (`themes/synthwave-84.json` and/or `themes/synthwave-84-blues.json`) exist before continuing.
 
 ### 2. Find your agent home
 
