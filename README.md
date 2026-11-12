@@ -37,6 +37,14 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
     <td align="center">Dracula</td>
     <td align="center">Monokai</td>
   </tr>
+  <tr>
+    <td width="50%"><a href="images/material-theme.png"><img src="images/material-theme.png" alt="Material Theme in Gentle Shell"></a></td>
+    <td width="50%"><img src="images/soon.png" alt="New themes coming soon; suggestions welcome"></td>
+  </tr>
+  <tr>
+    <td align="center">Material Theme</td>
+    <td></td>
+  </tr>
 </table>
 
 ## Style guides
@@ -47,6 +55,7 @@ Explore the palette and common theme roles for each adaptation:
 - [SynthWave '84 Blues](styles/synthwave-84-blues.md)
 - [Dracula](styles/dracula.md)
 - [Monokai](styles/monokai.md)
+- [Material Theme](styles/material-theme.md)
 
 ## Install and use a theme
 
@@ -97,8 +106,9 @@ For a complementary terminal appearance, these background and foreground colors 
 | SynthWave '84 Blues | `#002335`           | `#E5E5E5`           |
 | Dracula             | `#282A36`           | `#F8F8F2`           |
 | Monokai             | `#272822`           | `#F8F8F2`           |
+| Material Theme      | `#263238`           | `#EEFFFF`           |
 
-The SynthWave foreground is used in the previews; the Dracula and Monokai recommendations match their theme foregrounds. Your terminal's foreground can affect text that uses its default color. The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice.
+The SynthWave foreground is used in the previews; the Dracula, Monokai, and Material Theme recommendations match their theme foregrounds. Your terminal's foreground can affect text that uses its default color. The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice.
 
 **In Windows Terminal**, set the background and foreground colors in the selected profile's color scheme. Optionally, configure the profile's `font` object to enable font ligatures. The following example uses Victor Mono; other fonts with ligature support, such as Fira Code, can also be used by changing `face`:
 
@@ -127,6 +137,8 @@ These themes are unofficial adaptations of:
 - [SynthWave '84 Blues](https://github.com/sabrsorensen/synthwave-blues-vscode-theme), adapted by sabrsorensen from SynthWave '84. Its [MIT notice](LICENSES/synthwave-84-blues-MIT.txt) is preserved here.
 - Dracula, created by Zeno Rocha and maintained by the Dracula community: an unofficial adaptation of the [open-source VS Code theme source](https://github.com/dracula/visual-studio-code/blob/b50e62e320906d5f57a8bf05fd6ddf23b890d6dd/src/dracula.yml) at commit `b50e62e320906d5f57a8bf05fd6ddf23b890d6dd`. Its [MIT notice](LICENSES/dracula-MIT.txt) is preserved here. Message and tool-state backgrounds are adapted for Pi rather than copied from the source.
 - Monokai, originally created by Wimer Hazenberg: an unofficial adaptation of the [VS Code theme source](https://github.com/microsoft/vscode/blob/f93fdeb454a0f0fafe5f310408cec48dd3b6f58a/extensions/theme-monokai/themes/monokai-color-theme.json) at commit `f93fdeb454a0f0fafe5f310408cec48dd3b6f58a`. The [VS Code MIT notice](LICENSES/monokai-vscode-MIT.txt) is preserved here. Message and tool-state backgrounds are adapted for Pi.
+
+- Material Theme, created by Mattia Astorino: an unofficial adaptation of the historical Default variant from the [archived source](https://github.com/antfu/vsc-material-theme/blob/2727b73ef0b927bf8193cad0535da277c265ed83/scripts/generator/settings/specific/default.ts) and its [color mappings](https://github.com/antfu/vsc-material-theme/blob/2727b73ef0b927bf8193cad0535da277c265ed83/scripts/generator/color-set.ts), preserved by Anthony Fu at commit `2727b73ef0b927bf8193cad0535da277c265ed83`. The upstream README also credits Alessio Occhipinti. Its [Apache 2.0 license](LICENSES/material-theme-Apache-2.0.txt) is preserved here. This adaptation maps the palette to Pi roles and modifies message, selection, and tool-state backgrounds for terminal use.
 
 This project is not affiliated with or endorsed by the original authors or the [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) project.
 
