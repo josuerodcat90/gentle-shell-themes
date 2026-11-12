@@ -5,6 +5,7 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 ## Contents
 
 - [Preview](#preview)
+- [Style guides](#style-guides)
 - [Install and use a theme](#install-and-use-a-theme)
     - [Clone the repository](#1-clone-the-repository)
     - [Find your agent home](#2-find-your-agent-home)
@@ -17,28 +18,39 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 
 ## Preview
 
+- Each theme is an unofficial adaptation for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) of its original theme.
+
 <table>
   <tr>
     <td width="50%"><a href="images/synthwave-84.png"><img src="images/synthwave-84.png" alt="SynthWave '84 theme in Gentle Shell"></a></td>
     <td width="50%"><a href="images/synthwave-84-blues.png"><img src="images/synthwave-84-blues.png" alt="SynthWave '84 Blues theme in Gentle Shell"></a></td>
   </tr>
   <tr>
-    <td align="center">SynthWave '84 - unofficial Gentle Shell adaptation</td>
-    <td align="center">SynthWave '84 Blues - unofficial Gentle Shell adaptation</td>
+    <td align="center">SynthWave '84</td>
+    <td align="center">SynthWave '84 Blues</td>
   </tr>
   <tr>
     <td width="50%"><a href="images/dracula.png"><img src="images/dracula.png" alt="Dracula theme in Gentle Shell"></a></td>
     <td width="50%"><a href="images/monokai.png"><img src="images/monokai.png" alt="Monokai theme in Gentle Shell"></a></td>
   </tr>
   <tr>
-    <td align="center">Dracula - unofficial Gentle Shell adaptation</td>
-    <td align="center">Monokai - unofficial Gentle Shell adaptation</td>
+    <td align="center">Dracula</td>
+    <td align="center">Monokai</td>
   </tr>
 </table>
 
+## Style guides
+
+Explore the palette and common theme roles for each adaptation:
+
+- [SynthWave '84](styles/synthwave-84.md)
+- [SynthWave '84 Blues](styles/synthwave-84-blues.md)
+- [Dracula](styles/dracula.md)
+- [Monokai](styles/monokai.md)
+
 ## Install and use a theme
 
-You need Git and an existing Gentle Shell installation. Browse the previews above and the JSON files in `themes/` to choose the themes you want; they can coexist.
+You need Git and an existing Gentle Shell installation (latest version preferred). Browse the previews above and the JSON files in `themes/` to choose the themes you want; they can coexist.
 
 ### 1. Clone the repository
 
