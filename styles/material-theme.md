@@ -36,6 +36,14 @@ A dark palette for Gentle Shell adapted from the historical Material Theme Defau
 
 These tables highlight common roles; the JSON contains all available mappings and palette variables.
 
+## GPUI terminal ANSI overrides
+
+These explicit variables are used by GPUI v0.1.24 for the indicated ANSI entries. Other entries may use existing palette variables or be derived by GPUI; ANSI 0 is not explicitly overridden. External terminals manage their own palettes.
+
+| ANSI entry | Variable | Value |
+| --- | --- | --- |
+| 13 | `vars.brightMagenta` | `#D5ADEF` |
+
 ## Optional terminal colors
 
 The recommended terminal background is `#263238` and foreground is `#EEFFFF`. These are optional terminal settings, not additional theme tokens. See [terminal appearance](../README.md#terminal-appearance).

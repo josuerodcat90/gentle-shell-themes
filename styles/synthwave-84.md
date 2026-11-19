@@ -7,7 +7,7 @@ A dark, neon palette for Gentle Shell. The [theme JSON](../themes/synthwave-84.j
 | Token | Value | Usage | Source |
 | --- | --- | --- | --- |
 | `accent` | `#36f9f6` | Accent | `colors.accent` → `vars.aqua` |
-| `text` | `#ffffff` | Main text | `colors.text` → `vars.white` |
+| `text` | `#e5e5e5` | Main text | `colors.text` → `vars.foreground` |
 | `muted` | `#848bbd` | Muted text | `colors.muted` → `vars.comment` |
 | `borderAccent` | `#ff7edb` | Accent borders | `colors.borderAccent` → `vars.pink` |
 | `selectedBg` | `#463564` | Selected background | `colors.selectedBg` → `vars.selection` |
@@ -35,6 +35,16 @@ A dark, neon palette for Gentle Shell. The [theme JSON](../themes/synthwave-84.j
 
 These tables highlight common roles; the JSON contains all available mappings and palette variables.
 
+## GPUI terminal ANSI overrides
+
+These explicit variables are used by GPUI v0.1.24 for the indicated ANSI entries. Other entries may use existing palette variables or be derived by GPUI; ANSI 0 is not explicitly overridden. External terminals manage their own palettes.
+
+| ANSI entry | Variable | Value |
+| --- | --- | --- |
+| 5 | `vars.magenta` | `#ff7edb` |
+| 13 | `vars.brightMagenta` | `#ff9ee4` |
+| 14 | `vars.brightCyan` | `#36f9f6` |
+
 ## Optional terminal colors
 
-The recommended terminal background is `#262335` and foreground is `#E5E5E5`. These are terminal settings, not additional theme tokens. See [terminal appearance](../README.md#terminal-appearance).
+The recommended terminal background is `#262335` and foreground is `#E5E5E5`. Configure these separately in your terminal; they match the theme's background and main text colors. See [terminal appearance](../README.md#terminal-appearance).
