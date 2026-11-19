@@ -36,6 +36,19 @@ A dark palette for Gentle Shell inspired by Monokai. The [theme JSON](../themes/
 
 These tables highlight common roles; the JSON contains all available mappings and palette variables.
 
+## GPUI terminal ANSI overrides
+
+These explicit variables are used by GPUI v0.1.24 for the indicated ANSI entries. Other entries may use existing palette variables or be derived by GPUI; ANSI 0 is not explicitly overridden. External terminals manage their own palettes.
+
+| ANSI entry | Variable | Value |
+| --- | --- | --- |
+| 4 | `vars.blue` | `#66D9EF` |
+| 12 | `vars.brightBlue` | `#8CE3F3` |
+| 13 | `vars.brightMagenta` | `#C2A1FF` |
+| 14 | `vars.brightCyan` | `#8CE3F3` |
+
+Blue and cyan share the same palette color; their bright entries also match. GPUI maps `vars.purple` to ANSI 5.
+
 ## Optional terminal colors
 
 The recommended terminal background is `#272822` and foreground is `#F8F8F2`. These are terminal settings, not additional theme tokens. See [terminal appearance](../README.md#terminal-appearance).

@@ -35,6 +35,19 @@ A dark palette for Gentle Shell inspired by Dracula. The [theme JSON](../themes/
 
 These tables highlight common roles; the JSON contains all available mappings and palette variables.
 
+## GPUI terminal ANSI overrides
+
+These explicit variables are used by GPUI v0.1.24 for the indicated ANSI entries. Other entries may use existing palette variables or be derived by GPUI; ANSI 0 is not explicitly overridden. External terminals manage their own palettes.
+
+| ANSI entry | Variable | Value |
+| --- | --- | --- |
+| 4 | `vars.blue` | `#bd93f9` |
+| 12 | `vars.brightBlue` | `#d6acff` |
+| 13 | `vars.brightMagenta` | `#d6acff` |
+| 14 | `vars.brightCyan` | `#a4ffff` |
+
+GPUI maps `vars.purple` to ANSI 5, so blue and magenta share purple (and their bright entries share a lighter purple).
+
 ## Optional terminal colors
 
 The recommended terminal background is `#282A36` and foreground is `#F8F8F2`. These are terminal settings, not additional theme tokens. See [terminal appearance](../README.md#terminal-appearance).
