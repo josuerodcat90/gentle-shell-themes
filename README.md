@@ -1,6 +1,6 @@
 # Gentle Shell Themes
 
-An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell), inspired by various themes from Visual Studio Code.
+An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) TUI and [Gentle Shell Desktop (GPUI)](https://github.com/Gentleman-Programming/gentle-shell-gpui), inspired by various themes from Visual Studio Code. The same theme JSON files work in both interfaces; some Markdown and syntax colors may render differently.
 
 ## Contents
 
@@ -18,7 +18,9 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
 
 ## Preview
 
-- Each theme is an unofficial adaptation for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) of its original theme.
+- Each theme is an unofficial adaptation of its original theme for [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) and [Gentle Shell Desktop (GPUI)](https://github.com/Gentleman-Programming/gentle-shell-gpui).
+
+### Gentle Shell TUI
 
 <table>
   <tr>
@@ -39,6 +41,35 @@ An unofficial collection of Pi themes for [Gentle Shell](https://github.com/Gent
   </tr>
   <tr>
     <td width="50%"><a href="images/material-theme.png"><img src="images/material-theme.png" alt="Material Theme in Gentle Shell"></a></td>
+    <td width="50%"><img src="images/soon.png" alt="New themes coming soon; suggestions welcome"></td>
+  </tr>
+  <tr>
+    <td align="center">Material Theme</td>
+    <td></td>
+  </tr>
+</table>
+
+### Gentle Shell Desktop (GPUI)
+
+<table>
+  <tr>
+    <td width="50%"><a href="images/synthwave-84-gpui.png"><img src="images/synthwave-84-gpui.png" alt="SynthWave '84 theme in Gentle Shell Desktop"></a></td>
+    <td width="50%"><a href="images/synthwave-84-blues-gpui.png"><img src="images/synthwave-84-blues-gpui.png" alt="SynthWave '84 Blues theme in Gentle Shell Desktop"></a></td>
+  </tr>
+  <tr>
+    <td align="center">SynthWave '84</td>
+    <td align="center">SynthWave '84 Blues</td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="images/dracula-gpui.png"><img src="images/dracula-gpui.png" alt="Dracula theme in Gentle Shell Desktop"></a></td>
+    <td width="50%"><a href="images/monokai-gpui.png"><img src="images/monokai-gpui.png" alt="Monokai theme in Gentle Shell Desktop"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Dracula</td>
+    <td align="center">Monokai</td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="images/material-theme-gpui.png"><img src="images/material-theme-gpui.png" alt="Material Theme in Gentle Shell Desktop"></a></td>
     <td width="50%"><img src="images/soon.png" alt="New themes coming soon; suggestions welcome"></td>
   </tr>
   <tr>
@@ -90,7 +121,11 @@ If a file with the same name already exists in the destination, inspect and back
 
 ### 4. Select the theme
 
-Open Gentle Shell and choose an installed theme through `/gentle:customize` or Pi's `/settings` theme selector. If a newly added theme is not listed, run `/reload` or restart Gentle Shell. To return to your previous theme, select it through the same interface.
+In Gentle Shell TUI, choose an installed theme through `/gentle:customize` or Pi's `/settings` theme selector. If a newly added theme is not listed, run `/reload` or restart Gentle Shell.
+
+In Gentle Shell Desktop (GPUI), open **Configuration → Appearance → Theme Library → Your Pi Themes** and select the theme. After updating an installed theme, reselect it or restart Desktop to load the changes. If a newly added theme is not listed, restart Desktop.
+
+To return to your previous theme, select it through the same interface.
 
 ### Update or recover
 
@@ -98,7 +133,9 @@ To update, obtain the desired repository version, back up any installed file wit
 
 ## Terminal appearance
 
-For a complementary terminal appearance, these background and foreground colors are recommended but optional:
+When using Gentle Shell TUI in an external terminal, these background and foreground colors are recommended but optional. Configure them in your terminal application; the theme JSON does not set the terminal's default colors.
+
+Gentle Shell Desktop (GPUI) reads its main background and foreground directly from the theme, so separate terminal configuration is not needed for those colors. Transparency and derived colors can affect their appearance.
 
 | Theme               | Terminal background | Terminal foreground |
 | ------------------- | ------------------- | ------------------- |
@@ -108,7 +145,7 @@ For a complementary terminal appearance, these background and foreground colors 
 | Monokai             | `#272822`           | `#F8F8F2`           |
 | Material Theme      | `#263238`           | `#EEFFFF`           |
 
-The SynthWave foreground is used in the previews; the Dracula, Monokai, and Material Theme recommendations match their theme foregrounds. Your terminal's foreground can affect text that uses its default color. The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice.
+These recommended foregrounds match the current main text colors in the theme files. Your terminal's foreground can affect text that uses its default color. The [Victor Mono](https://rubjo.github.io/victor-mono/) font is also an optional choice.
 
 **In Windows Terminal**, set the background and foreground colors in the selected profile's color scheme. Optionally, configure the profile's `font` object to enable font ligatures. The following example uses Victor Mono; other fonts with ligature support, such as Fira Code, can also be used by changing `face`:
 
@@ -140,8 +177,8 @@ These themes are unofficial adaptations of:
 
 - Material Theme, created by Mattia Astorino: an unofficial adaptation of the historical Default variant from the [archived source](https://github.com/antfu/vsc-material-theme/blob/2727b73ef0b927bf8193cad0535da277c265ed83/scripts/generator/settings/specific/default.ts) and its [color mappings](https://github.com/antfu/vsc-material-theme/blob/2727b73ef0b927bf8193cad0535da277c265ed83/scripts/generator/color-set.ts), preserved by Anthony Fu at commit `2727b73ef0b927bf8193cad0535da277c265ed83`. The upstream README also credits Alessio Occhipinti. Its [Apache 2.0 license](LICENSES/material-theme-Apache-2.0.txt) is preserved here. This adaptation maps the palette to Pi roles and modifies message, selection, and tool-state backgrounds for terminal use.
 
-This project is not affiliated with or endorsed by the original authors or the [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) project.
-
 ## License
 
 New work in this repository is licensed under the [MIT License](LICENSE). The licenses of the original projects remain applicable to their respective material.
+
+This project is not affiliated with or endorsed by the original authors or the [Gentle Shell](https://github.com/Gentleman-Programming/gentle-shell) and [Gentle Shell Desktop (GPUI)](https://github.com/Gentleman-Programming/gentle-shell-gpui) projects.
