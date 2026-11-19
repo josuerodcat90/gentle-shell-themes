@@ -3,6 +3,7 @@
   "appearance": "dark",
   "vars": {
     "background": "#263238",
+    "bg": "#263238",
     "foreground": "#EEFFFF",
     "selection": "#374B50",
     "comment": "#546E7A",
